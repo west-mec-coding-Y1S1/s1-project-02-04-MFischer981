@@ -1,0 +1,41 @@
+.header {
+    margin: 2vw;
+    margin-bottom: 0px;
+    width: calc(136px + 20vw);
+}
+
+.navbar {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2vw;
+    margin-top: 0px;
+    font-family: "Roboto";
+    font-size: 26px;
+    color: white;
+    background-color: rgb(56, 78, 90);
+}
+
+.btn {
+    background-color: rgb(63, 85, 97);
+    padding: 15px;
+    transition: .2s;
+}
+
+.btn:hover {
+    background-color: rgb(60, 115, 145);
+    padding: 15px;
+    filter: drop-shadow(2px 2px 1px black)
+}
+
+body {
+    background-color: rgb(31, 44, 51);
+}
+
+article {
+    margin: 2vw;
+    margin-bottom: 0px;
+    font-family: "Roboto";
+    font-size: 16px;
+    color: white;
+}

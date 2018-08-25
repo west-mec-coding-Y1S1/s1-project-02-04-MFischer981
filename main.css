@@ -1,41 +1,170 @@
 .header {
-    margin: 2vw;
-    margin-bottom: 0px;
-    width: calc(136px + 20vw);
+    margin-bottom: .5vw;
+    width: 100%;
 }
 
 .navbar {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 2vw;
     margin-top: 0px;
     font-family: "Roboto";
-    font-size: 26px;
-    color: white;
-    background-color: rgb(56, 78, 90);
+    font-size: calc(12px + 1.4vw);
+    filter: drop-shadow(2px 2px 1px rgb(74, 75, 77));
+    color: black;
 }
 
-.btn {
-    background-color: rgb(63, 85, 97);
-    padding: 15px;
-    transition: .2s;
-}
-
-.btn:hover {
-    background-color: rgb(60, 115, 145);
-    padding: 15px;
-    filter: drop-shadow(2px 2px 1px black)
-}
-
-body {
-    background-color: rgb(31, 44, 51);
-}
 
 article {
     margin: 2vw;
     margin-bottom: 0px;
     font-family: "Roboto";
     font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+img {
+    filter: drop-shadow(2px 2px 1px rgb(74, 75, 77));
+    transition: .2s;
+}
+
+h1 {
+    font-size: calc(12px + 1.4vw);
+}
+
+th {
+    background-color: rgb(63, 85, 97);
+    transition: .2s;
+
+}
+
+table {
+    margin: 2vw;
+    font-family: "Roboto";
+    font-size: 26px;
     color: white;
+    margin-top: -10px;
+}
+
+.obj {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Roboto";
+    font-size: 26px;
+    color: white;
+    margin: 2vw;
+}
+
+.imgObj {
+    transition: .2s;
+}
+
+.imgObj:hover {
+    filter: saturate(150%);
+    
+}
+
+p {
+    font-size: calc(12px + 1vw);
+    padding: 2vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 42px;  
+}
+
+address {
+    font-size: calc(8px + .96vw);
+    padding: 2vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-style: normal;
+}
+
+footer {
+    font-size: calc(12px + 1vw);
+    padding: 2vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 42px;  
+    font-family: "Roboto";
+}
+
+.games {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Roboto";
+    font-size: 26px;
+    color: white;
+}
+
+ul {
+    font-size: calc(12px + 1vw);
+    padding: 2vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: calc(12px + 2.4vw);
+    background-color: rgb(48, 48, 48);
+    color: white;
+    z-index: -1;
+        filter: drop-shadow(2px 2px 1px rgb(74, 75, 77));    
+}
+
+li {
+    filter: drop-shadow(2px 2px 1px black);    
+}
+
+.imagesp {
+    margin: 4px;
+    margin-left: 20px;
+}
+
+.reviews {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Roboto";
+    font-size: 26px;
+    color: black;
+    height: 500px;
+    overflow: auto;
+}
+
+.rev {
+    padding: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    transition: .2s;
+ background-color: rgb(5, 26, 46);
+ color: white;
+ text-decoration: none;
+}
+
+.rev:hover {
+    padding: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+background-color: rgb(177, 206, 223);
+color: black;
+text-decoration: none;
+}
+
+.rev > a {
+    padding: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    transition: .2s;
+ background-color: rgb(5, 26, 46);
+ color: white;
+ text-decoration: none;
+}
+
+.rev:hover > a {
+    padding: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+background-color: rgb(177, 206, 223);
+color: black;
+text-decoration: none;
 }

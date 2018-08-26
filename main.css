@@ -6,7 +6,7 @@
 .navbar {
     display: grid;
     grid-gap: .2vw;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     margin-top: 0px;
     font-family: "Roboto";
     font-size: calc(12px + 1.4vw);
@@ -26,6 +26,8 @@ img {
     filter: drop-shadow(2px 2px 1px rgb(74, 75, 77));
     transition: .2s;
 }
+
+
 
 h1 {
     font-size: calc(12px + 1.4vw);
@@ -47,10 +49,10 @@ table {
 .obj {
     display: grid;
     grid-gap: .5vw;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     font-family: "Roboto";
     font-size: 26px;
-    color: white;
+    color: black;
     margin: 2vw;
 }
 
@@ -67,7 +69,7 @@ p {
     padding: 2vw;
     padding-top: 0px;
     padding-bottom: 0px;
-    line-height: 42px;
+    line-height: calc(12px + 2vw);
 }
 
 address {
@@ -129,34 +131,44 @@ li {
 }
 
 .rev {
-    padding: 2vw;
+    padding: 1vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
     background-image: url(https://addons-media.operacdn.com/media/CACHE/images/themes/65/59765/1.0-rev1/images/a1219e9c-b795-4107-bb4b-5059d8f72203/88ab9e994458c74c318b84d0402d8f8d.jpg);
     color: white;
     text-decoration: none;
+    
+    border-radius: 3vw;
     transition: .2s;
 }
 
 .rev:hover {
-    padding: 3vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
+    filter: drop-shadow(5px 0px 5px black);
     filter: brightness(200%);
     text-decoration: none;
 }
 
+.rev:active {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    filter: drop-shadow(5px 0px 5px black);
+    filter: brightness(150%);
+    text-decoration: none;
+}
+
 .rev>a {
-    padding: 2vw;
+    padding: 1vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
     color: white;
     text-decoration: none;
+    filter: drop-shadow(5px 0px 5px black);
     transition: .2s;
 }
 
 .rev:hover>a {
-    padding: 3vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
     text-decoration: none;
@@ -194,3 +206,18 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+.philosophy {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(2fr, 1fr) );
+    grid-gap: 2vw;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    margin: 2vw;
+}
+

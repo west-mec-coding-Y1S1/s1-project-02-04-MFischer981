@@ -8,11 +8,10 @@ body {
     background-color: rgb(15, 15, 15)
 }
 
-
 .navbar {
     display: grid;
     grid-gap: .2vw;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
     margin-top: 0px;
     font-family: "Roboto";
     font-size: calc(12px + 1.4vw);
@@ -20,7 +19,6 @@ body {
     color: black;
     background-image: url(https://addons-media.operacdn.com/media/CACHE/images/themes/65/59765/1.0-rev1/images/a1219e9c-b795-4107-bb4b-5059d8f72203/88ab9e994458c74c318b84d0402d8f8d.jpg);
 }
-
 
 article {
     margin: .5vw;
@@ -34,7 +32,6 @@ img {
     filter: drop-shadow(2px 2px 8px rgb(0, 0, 0));
     transition: .2s;
 }
-
 
 h1 {
     font-size: calc(12px + 1.4vw);
@@ -56,7 +53,7 @@ table {
 .obj {
     display: grid;
     grid-gap: .5vw;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
     font-family: "Roboto";
     font-size: 26px;
     color: white;
@@ -156,7 +153,6 @@ li {
     text-decoration: none;
 }
 
-
 .rev>a {
     padding-left: .5vw;
     padding-right: .5vw;
@@ -200,7 +196,8 @@ li {
     grid-template-columns: 1fr 1fr;
 }
 
-html, body {
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -212,7 +209,7 @@ html, body {
 
 .shop {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(2fr, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(2fr, 1fr));
     grid-gap: 2vw;
     background-color: rgb(48, 48, 48);
     color: white;
@@ -220,9 +217,26 @@ html, body {
 }
 
 .social {
- position: relative;
- left: 0vw;
- margin: .5vw;
- margin-bottom: -6vw;
+    position: relative;
+    left: -8.6vw;
+    top: 16vw;
+    margin-bottom: -3vw;
+    background-image: linear-gradient(45deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 80%);
+    padding: .5vw;
+    filter: drop-shadow(5px 0px 25px black);
+    opacity: .6;
+    transition: .5s;
+    width: 15vw;
+    filter: drop-shadow(5px 0px 5px black);
+}
+
+.social:hover {
+    position: relative;
+    top: 16vw;
+    left: 0vw;
+    background-image: linear-gradient(45deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 80%);
+    padding: .5vw;
+    filter: drop-shadow(5px 0px 25px black);
+    opacity: 1;
 }
 

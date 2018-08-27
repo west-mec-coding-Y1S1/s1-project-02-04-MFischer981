@@ -1,7 +1,13 @@
 .header {
-    margin-bottom: .5vw;
+    margin: 0px;
     width: 100vw;
+    margin-bottom: -2vw;
 }
+
+body {
+    background-color: rgb(15, 15, 15)
+}
+
 
 .navbar {
     display: grid;
@@ -10,23 +16,24 @@
     margin-top: 0px;
     font-family: "Roboto";
     font-size: calc(12px + 1.4vw);
-    filter: drop-shadow(2px 2px 1px rgb(74, 75, 77));
+    filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
     color: black;
+    background-image: url(https://addons-media.operacdn.com/media/CACHE/images/themes/65/59765/1.0-rev1/images/a1219e9c-b795-4107-bb4b-5059d8f72203/88ab9e994458c74c318b84d0402d8f8d.jpg);
 }
+
 
 article {
     margin: .5vw;
     margin-bottom: 0px;
     font-family: "Roboto";
     font-size: calc(12px + 1vw);
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 img {
-    filter: drop-shadow(2px 2px 1px rgb(74, 75, 77));
+    filter: drop-shadow(2px 2px 8px rgb(0, 0, 0));
     transition: .2s;
 }
-
 
 
 h1 {
@@ -52,7 +59,7 @@ table {
     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     font-family: "Roboto";
     font-size: 26px;
-    color: black;
+    color: white;
     margin: 2vw;
 }
 
@@ -86,6 +93,7 @@ footer {
     padding-top: 0px;
     padding-bottom: 0px;
     line-height: 42px;
+    color: white;
     font-family: "Roboto";
 }
 
@@ -137,31 +145,21 @@ li {
     background-image: url(https://addons-media.operacdn.com/media/CACHE/images/themes/65/59765/1.0-rev1/images/a1219e9c-b795-4107-bb4b-5059d8f72203/88ab9e994458c74c318b84d0402d8f8d.jpg);
     color: white;
     text-decoration: none;
-    
-    border-radius: 3vw;
+    filter: drop-shadow(1px 0px 1px black) brightness(110%);
     transition: .2s;
 }
 
 .rev:hover {
     padding-top: 1vw;
     padding-bottom: 1vw;
-    filter: drop-shadow(5px 0px 5px black);
-    filter: brightness(200%);
+    filter: drop-shadow(5px 0px 5px black) brightness(200%);
     text-decoration: none;
 }
 
-.rev:active {
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    filter: drop-shadow(5px 0px 5px black);
-    filter: brightness(150%);
-    text-decoration: none;
-}
 
 .rev>a {
-    padding: 1vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    padding-left: .5vw;
+    padding-right: .5vw;
     color: white;
     text-decoration: none;
     filter: drop-shadow(5px 0px 5px black);
@@ -169,8 +167,8 @@ li {
 }
 
 .rev:hover>a {
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    padding-left: .5vw;
+    padding-right: .5vw;
     text-decoration: none;
 }
 
@@ -219,5 +217,12 @@ html, body {
     background-color: rgb(48, 48, 48);
     color: white;
     margin: 2vw;
+}
+
+.social {
+ position: relative;
+ left: 0vw;
+ margin: .5vw;
+ margin-bottom: -6vw;
 }
 

@@ -20,7 +20,8 @@ body {
 }
 
 article {
-    margin: .5vw;
+    margin: 4vw;
+    margin-top: 1vw;
     margin-bottom: 0px;
     font-family: "Roboto";
     font-size: calc(12px + 1vw);
@@ -51,12 +52,11 @@ table {
 
 .obj {
     display: grid;
-    grid-gap: .5vw;
+    grid-gap: 2vw;
     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
     font-family: "Roboto";
     font-size: 26px;
     color: white;
-    margin: 2vw;
 }
 
 .imgObj {
@@ -68,11 +68,11 @@ table {
 }
 
 p {
-    font-size: calc(12px + 1vw);
+    font-size: calc(8px + 1vw);
     padding: 2vw;
     padding-top: 0px;
     padding-bottom: 0px;
-    line-height: calc(12px + 2vw);
+    line-height: calc(8px + 2vw);
 }
 
 address {
@@ -84,13 +84,26 @@ address {
 }
 
 footer {
-    font-size: calc(12px + 1vw);
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 2fr 1fr;
+    font-size: calc(8px + .5vw);
     padding: 2vw;
     padding-top: 0px;
     padding-bottom: 0px;
-    line-height: 42px;
     color: white;
     font-family: "Roboto";
+    background-color: rgb(48, 48, 48);
+    padding: 2vw;
+    margin: 0;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    opacity: .5;
+    transition: .5s;
+}
+
+footer:hover {
+    opacity: .8;
 }
 
 .games {
@@ -215,27 +228,24 @@ body {
     margin: 2vw;
 }
 
-.social {
-    position: relative;
-    left: -8.6vw;
-    top: 16vw;
-    margin-bottom: -3vw;
-    background-image: linear-gradient(45deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 80%);
-    padding: .5vw;
-    filter: drop-shadow(5px 0px 25px black);
-    opacity: .6;
-    transition: .5s;
-    width: 15vw;
-    filter: drop-shadow(5px 0px 5px black);
+
+@media only screen and (max-width: 860px) {
+     #foot {
+        display: none;
+
+    }
 }
 
-.social:hover {
-    position: relative;
-    left: 0vw;
-    top: 16vw;
-    background-image: linear-gradient(45deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 80%);
-    padding: .5vw;
-    filter: drop-shadow(5px 0px 25px black);
-    opacity: 1;
+
+@media only screen and (max-width: 860px) {
+    footer {
+        display: grid;
+        grid-gap: 1vw;
+        grid-template-columns: 1fr;
+   }
+}
+
+#philosophy {
+    border: white 1vw solid;
 }
 

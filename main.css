@@ -98,6 +98,7 @@ footer {
     margin: 0;
     padding-left: 4vw;
     padding-right: 4vw;
+    padding-bottom: 5vw;
     opacity: .5;
     transition: .5s;
 }
@@ -124,7 +125,7 @@ ul {
     background-color: rgb(48, 48, 48);
     color: white;
     z-index: -1;
-    filter: drop-shadow(2px 2px 1px rgb(74, 75, 77));
+    filter: drop-shadow(2px 2px 1px black);
 }
 
 li {
@@ -249,3 +250,6 @@ body {
     border: white 1vw solid;
 }
 
+#shoph1 {
+    margin-top: -1vw;
+}

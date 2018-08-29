@@ -98,7 +98,6 @@ footer {
     margin: 0;
     padding-left: 4vw;
     padding-right: 4vw;
-    padding-bottom: 5vw;
     opacity: .5;
     transition: .5s;
 }
@@ -248,8 +247,275 @@ body {
 
 #philosophy {
     border: white 1vw solid;
+    transition: .2s;
+}
+
+#philosophy:hover {
+    border: rgb(30, 30, 30) 1vw solid;
+    filter: drop-shadow(2px 2px 8px rgb(50, 50, 50));
 }
 
 #shoph1 {
     margin-top: -1vw;
 }
+
+.header {
+    margin: 0px;
+    width: 100vw;
+}
+
+body {
+    background-color: rgb(15, 15, 15)
+}
+
+.navbar {
+    display: grid;
+    grid-gap: .2vw;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+    margin-top: 0px;
+    font-family: "Roboto";
+    font-size: calc(12px + 1.4vw);
+    filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
+    color: black;
+    background-image: url(https://addons-media.operacdn.com/media/CACHE/images/themes/65/59765/1.0-rev1/images/a1219e9c-b795-4107-bb4b-5059d8f72203/88ab9e994458c74c318b84d0402d8f8d.jpg);
+}
+
+article {
+    margin: 6vw;
+    margin-top: 1vw;
+    margin-bottom: 0px;
+    font-family: "Roboto";
+    font-size: calc(12px + 1vw);
+    color: white;
+}
+
+img {
+    filter: drop-shadow(2px 2px 8px rgb(0, 0, 0));
+    transition: .2s;
+}
+
+h1 {
+    font-size: calc(12px + 1.4vw);
+}
+
+th {
+    background-color: rgb(63, 85, 97);
+    transition: .2s;
+}
+
+table {
+    margin: 2vw;
+    font-family: "Roboto";
+    font-size: calc(16px + 1.4vw);
+    color: white;
+    margin-top: -10px;
+}
+
+.obj {
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+    font-family: "Roboto";
+    font-size: 26px;
+    color: white;
+}
+
+.imgObj {
+    transition: .2s;
+}
+
+.imgObj:hover {
+    filter: saturate(150%);
+}
+
+p {
+    font-size: calc(8px + 1vw);
+    padding: 2vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: calc(8px + 2vw);
+}
+
+address {
+    font-size: calc(8px + .96vw);
+    padding: 2vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-style: normal;
+}
+
+footer {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 2fr 1fr;
+    font-size: calc(8px + .5vw);
+    padding: 2vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: white;
+    font-family: "Roboto";
+    background-color: rgb(48, 48, 48);
+    padding: 2vw;
+    margin: 0;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    opacity: .5;
+    transition: .5s;
+}
+
+footer:hover {
+    opacity: .8;
+}
+
+.games {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Roboto";
+    font-size: 26px;
+    color: white;
+}
+
+ul {
+    font-size: calc(12px + 1vw);
+    padding: 2vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: calc(12px + 2.4vw);
+    background-color: rgb(48, 48, 48);
+    color: white;
+    z-index: -1;
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+li {
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+.imagesp {
+    margin: 4px;
+    margin-left: 20px;
+}
+
+.reviews {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Roboto";
+    font-size: 26px;
+    color: black;
+    height: 500px;
+    overflow: auto;
+}
+
+.rev {
+    padding: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background-image: url(https://addons-media.operacdn.com/media/CACHE/images/themes/65/59765/1.0-rev1/images/a1219e9c-b795-4107-bb4b-5059d8f72203/88ab9e994458c74c318b84d0402d8f8d.jpg);
+    color: white;
+    text-decoration: none;
+    filter: drop-shadow(1px 0px 1px black) brightness(110%);
+    transition: .2s;
+}
+
+.rev:hover {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    filter: drop-shadow(5px 0px 5px black) brightness(200%);
+    text-decoration: none;
+}
+
+.rev>a {
+    padding-left: .5vw;
+    padding-right: .5vw;
+    color: white;
+    text-decoration: none;
+    filter: drop-shadow(5px 0px 5px black);
+    transition: .2s;
+}
+
+.rev:hover>a {
+    padding-left: .5vw;
+    padding-right: .5vw;
+    text-decoration: none;
+}
+
+.btn2 {
+    padding: 1vw;
+    margin: 2vw;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    background-image: url(https://addons-media.operacdn.com/media/CACHE/images/themes/65/59765/1.0-rev1/images/a1219e9c-b795-4107-bb4b-5059d8f72203/88ab9e994458c74c318b84d0402d8f8d.jpg);
+    color: white;
+    text-decoration: none;
+    transition: .2s;
+    font-size: calc(6px + 1.3vw);
+    border-radius: 10px;
+}
+
+.btn2:hover {
+    padding: 2vw;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: .2s;
+    filter: brightness(150%);
+}
+
+.btnopt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.philosophy {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(2fr, 1fr));
+    grid-gap: 2vw;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    margin: 2vw;
+}
+
+
+@media only screen and (max-width: 860px) {
+     #foot {
+        display: none;
+
+    }
+}
+
+
+@media only screen and (max-width: 860px) {
+    footer {
+        display: grid;
+        grid-gap: 1vw;
+        grid-template-columns: 1fr;
+   }
+}
+
+#philosophy {
+    border: white 1vw solid;
+    transition: .2s;
+}
+
+#philosophy:hover {
+    border: rgb(30, 30, 30) 1vw solid;
+}
+
+#shoph1 {
+    margin-top: -1vw;
+}
+
